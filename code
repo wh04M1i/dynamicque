@@ -100,3 +100,22 @@ void first_element()
     }
     else
         printf("\n\tThe front element is %d \n", front->data);
+        }
+void queue_size()
+{
+    struct node *temp;
+    temp = front;
+    int cnt = 0;
+    if (front  ==  NULL)
+    {
+        printf(" queue empty \n");
+    }
+    while (temp)
+    {
+        printf("%d  ", temp->data);
+        temp = temp->link;
+        cnt++;
+    }
+    printf("\n\tsize of queue is %d\n", cnt);
+}
+
